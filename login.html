@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Logout cu localStorage</title>
+    <link href="login.css" rel="stylesheet">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="./login.html">LOG IN</a></li>
+                        <li><a href="./index.html#moments!">MOMENTS</a></li>
+                        <li class="dropdown">
+                            <a href="./jucatori.html/#jucator1">PLAYERS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#vini1">Vinicius Jr</a></li>
+                                <li><a href="#mbappe">Kylian Mbappe</a></li>
+                                <li><a href="#bellingham">Jude Bellingham</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./index.html#trofee!">TROPHIES</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>        
+<div id="login-section">
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Nume utilizator" required />
+        <input type="password" id="password" placeholder="Parolă" required />
+        <button type="button" id="login-button">Login</button>
+    </form>
+    <button type="button" id="logout-button" style="display: none;">Logout</button>
+    <p id="welcome-message"></p>
+</div>
+</body>
+</html>

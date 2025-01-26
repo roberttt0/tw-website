@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <section class="header">
@@ -16,13 +17,14 @@
             <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             <div class="nav-links">
                 <ul>
+                    <li><a href="./login.html">LOG IN</a></li>
                     <li><a href="#moments!">MOMENTS</a></li>
                     <li class="dropdown">
-                        <a href="#jucator1">PLAYERS</a>
+                        <a href="./jucatori.html">PLAYERS</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#vini1">Vinicius Jr</a></li>
-                            <li><a href="#mbappe">Kyllian Mbappe</a></li>
-                            <li><a href="#bellingham">Jude Bellingham</a></li>
+                            <li><a href="./jucatori.html#vini1">Vinicius Jr</a></li>
+                            <li><a href="./jucatori.html#mbappe">Kyllian Mbappe</a></li>
+                            <li><a href="./jucatori.html#bellingham">Jude Bellingham</a></li>
                         </ul>
                     </li>
                     <li><a href="#trofee">TROPHIES</a></li>
@@ -74,7 +76,7 @@
 
       <!-- players -->
 
-      <section class="players" id="jucator1">
+      <!-- <section class="players" id="jucator1">
         <h2>Top Players</h2>
         <div class="jucator" id="vini1">
             <h3>Vinicius Jr.</h3>
@@ -135,7 +137,7 @@
             </div>
         </div>
       </section>
-      <div class="linie"></div>
+      <div class="linie"></div> -->
 
       <!-- Trofee -->
        <section class="trophies-container" id="trofee">
@@ -187,7 +189,23 @@
        <div class="linie">
         <div class="moving-box"></div>
        </div>
-       
+
+       <div id = "buton">
+            <button>CLICK ME</button>
+            <br>
+            <button id="buttonw">PRESS W</button>
+            <span id="counter">0</span>
+       </div>
+       <div class = "inputuri">
+            <label for="inputText">Text:</label>
+            <input type="text" id="inputText" placeholder="Introduceți text">
+            <label for="inputRange">Range:</label>
+            <input type="range" id="inputRange" min="0" max="100" value="50">
+            <span id="rangeValue">50</span>
+            <br><br>
+        </div>
+
+        <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000;"></canvas>
 
       <!-- footer -->
        
@@ -203,6 +221,8 @@
             <img src="img/whatsapp.png" alt="">
         </div>
     </div>
+
+
         
 
 </body>

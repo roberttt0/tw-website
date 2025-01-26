@@ -622,3 +622,25 @@ body{
     transform: scale(1.1);
     font-size: 50px
 }
+
+#buton button {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    background-color: blue;
+}
+
+#counter {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+}
+
+.inputuri {
+    text-align: center;
+    padding-top: 50px;
+}
